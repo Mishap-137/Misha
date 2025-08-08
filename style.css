@@ -1,0 +1,46 @@
+/* Basic page style */
+body {
+    font-family: 'Crimson Text', Georgia, serif;
+    background-color: #f9f8f6;
+    color: #333;
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #004d40;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section headings */
+h2 {
+    font-variant: small-caps;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+}
