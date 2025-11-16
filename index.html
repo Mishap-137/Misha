@@ -6,6 +6,57 @@
     <title>Misha's Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .content-wrapper {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        
+        .main-content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 150px;
+            font-size: 0.85rem;
+        }
+        
+        .sidebar h3 {
+            font-size: 0.9rem;
+            font-variant: small-caps;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 0.3rem;
+        }
+        
+        .sidebar a {
+            color: #004d40;
+            text-decoration: none;
+        }
+        
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,13 +68,26 @@
             <a href="about.html">About</a>
         </nav>
     </header>
-    <main>
-        <h2>Welcome</h2>
-        <p>Hello, and welcome to my personal website. This is a quiet space for writing, ideas, and projects.</p>
-    </main>
+    <div class="content-wrapper">
+        <main class="main-content">
+            <h2>Welcome</h2>
+            <p>Hello, and welcome to my personal website. This is a quiet space for writing, ideas, and projects.</p>
+        </main>
+        <aside class="sidebar">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://dieworkwear.com" target="_blank">Die, Workwear!</a></li>
+                <li><a href="https://dylwall.com" target="_blank">Dylan Wall</a></li>
+                <li><a href="https://publish.obsidian.md/tasmin-chu/Blog" target="_blank">Tasmin Chu</a></li>
+                <li><a href="https://lucaman99.github.io" target="_blank">Jack Ceroni</a></li>
+                <li><a href="https://timhenke.nl" target="_blank">Tim Henke</a></li>
+                <li><a href="https://deargod.computer" target="_blank">Dear God</a></li>
+            </ul>
+        </aside>
+    </div>
     <footer>
         <p>&copy; 2025 Misha</p>
-        <p><a href="https://letterboxd.com/et_cetera_/">Letterboxd</a> · <a href="https://www.goodreads.com/user/show/156949855-mishmash">Goodreads</a></p>
+        <p><a href="https://x.com/mishapathy">Twitter</a> · <a href="https://letterboxd.com/et_cetera_/">Letterboxd</a> · <a href="https://www.goodreads.com/user/show/156949855-mishmash">Goodreads</a></p>
     </footer>
 </body>
 </html>
