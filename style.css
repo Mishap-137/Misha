@@ -1,46 +1,117 @@
-/* Basic page style */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Crimson Text', Georgia, serif;
-    background-color: #f9f8f6;
-    color: #333;
-    max-width: 700px;
-    margin: auto;
-    padding: 2rem;
-    line-height: 1.6;
+    font-weight: 400;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background-color: #fff;
 }
 
-/* Header and navigation */
-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
+/* â”€â”€â”€ Nav â”€â”€â”€ */
 
-h1 {
-    font-variant: small-caps;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+nav {
+    margin-bottom: 2.5rem;
 }
 
 nav a {
-    margin: 0 1rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    color: #1a1a1a;
     text-decoration: none;
-    color: #004d40;
+    font-weight: 500;
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
 }
 
 nav a:hover {
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
-/* Section headings */
+/* â”€â”€â”€ Headings â”€â”€â”€ */
+
+h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+}
+
 h2 {
-    font-variant: small-caps;
-    margin-top: 2rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 0.6rem;
+    color: #1a1a1a;
 }
 
-/* Footer */
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: #1a1a1a;
+}
+
+/* â”€â”€â”€ Body text â”€â”€â”€ */
+
+p {
+    color: #3a3a3a;
+    font-size: 0.95rem;
+}
+
+/* â”€â”€â”€ Links list â”€â”€â”€ */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.55rem;
+}
+
+ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* â”€â”€â”€ Footer â”€â”€â”€ */
+
 footer {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #777;
+    margin-top: 4rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.82rem;
+    color: #888;
+}
+
+footer p + p {
+    margin-top: 0.4rem;
+}
+
+footer a {
+    color: #888;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
