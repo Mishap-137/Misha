@@ -81,7 +81,13 @@
         <main class="main-content">
             <h2>Welcome</h2>
             <p>I'm Misha. Here I'm collecting my writings, notes, and the webpages of other beautiful individuals.</p>
-            <p><a href="https://markovs-salon.vercel.app">Markov's Salon</a> is a website where you can write sentences and contribute to short stories with strangers.
+            <p><a href="https://markovs-salon.vercel.app">Markov's Salon</a> is a website where you can write sentences and contribute to short stories with strangers.</p>
+            <p>I have a spreadsheet for my personal library. Presently I have <span id="book-count">473</span> books.</p>
+            <script>
+                fetch('https://script.google.com/macros/s/AKfycbxcJ8_dNAYAgZ4JKD34-TQjU7BG45eHEmOOMNr7cm2XbpgA5zJhvbaNHCbalDR9MVy4/exec')
+                    .then(r => r.json())
+                    .then(data => { document.getElementById('book-count').textContent = data.count; });
+            </script>
         </main>
         <aside class="sidebar">
             <h3>Blogroll</h3>
