@@ -86,7 +86,8 @@
             <script>
                 fetch('https://script.google.com/macros/s/AKfycbxcJ8_dNAYAgZ4JKD34-TQjU7BG45eHEmOOMNr7cm2XbpgA5zJhvbaNHCbalDR9MVy4/exec')
                     .then(r => r.json())
-                    .then(data => { document.getElementById('book-count').textContent = data.count; });
+                    .then(data => { document.getElementById('book-count').textContent = data.count; })
+                    .catch(err => console.error('Failed to load book count:', err));
             </script>
         </main>
         <aside class="sidebar">
